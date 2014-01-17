@@ -3,7 +3,7 @@
 	"description": "This is an object to create your own dependent objects, outside of using Meteor Sessions.",
 	"homepage": "https://github.com/ewindso/meteor-simple-dependency-object",
 	"author": "Elijah Windsor <ewindsor@gmail.com>",
-	"version": "0.0.2.1",
+	"version": "0.0.21",
 	"git": "https://github.com/ewindso/meteor-simple-dependency-object.git",
 	"packages": {
 	}
