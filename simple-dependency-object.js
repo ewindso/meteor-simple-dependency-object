@@ -33,7 +33,10 @@ SimpleDep.prototype.retrievePersistData = function() {
 		if(curKey == this.persistKey) {
 
 			var persistedValue = cookieDataArray[1].replace('_simple_dep_', '');
-			persistedValue = JSON.parse(decodeURIComponent(persistedValue));
+			persistedValue = decodeURIComponent(persistedValue);
+			try {
+				persistedValue = JSON.parse(persistedValue);
+			} catch(e) { } 
 			this.setValue(persistedValue);
 
 			return true;
