@@ -3,6 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api, where) {
+	api.add_files('lib/Object.identical.js', 'client');
 	api.add_files('simple-dependency-object.js', 'client');
 	api.export('SimpleDep', 'client');
 });
